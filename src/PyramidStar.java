@@ -3,7 +3,7 @@ public class PyramidStar
     public static void main(String[] args)
     {
         int r=4;
-        /*for(int i=1;i<=r;i++) {
+        for(int i=1;i<=r;i++) {
             for (int s=r-i; s>=0; s--) {
                 System.out.print(" ");
             }
@@ -11,9 +11,9 @@ public class PyramidStar
                 System.out.print("* ");
             }
             System.out.println();
-        }*/
+        }
 
-        for(int i=r;i>0;i--)
+        /*for(int i=r;i>0;i--)
         {
          for(int s=r-i;s>0;s--)
          {
@@ -24,7 +24,7 @@ public class PyramidStar
              System.out.print("* ");
          }
          System.out.println();
-        }
+        }*/
 
         }
     }

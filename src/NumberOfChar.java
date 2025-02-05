@@ -1,27 +1,30 @@
+import java.util.*;
 public class NumberOfChar
 {
     public static void main(String[] args)
     {
-        String line="anna";
-        //int len=line.length();
-        System.out.println(line.length());
-        int counts=0;
-        char[] res=line.toCharArray();
-        /*for(int a=0;a<res.length;a++)
-        {
-            System.out.print(res[a]);
-        }*/
+        /*Scanner obj=new Scanner(System.in);
+        System.out.println("Enter the String:");
+        String str=obj.next();*/
 
-        for(int i=0;i<res.length-1;i++)
-        {
-            for (int j = 0; j <res.length-1; j++) {
-                //int i;
-                if (res[i] == res[j])
-                    counts++;
+        String name = "MeganaBasavanna";
+        int count=0;
+        String expName = "";
+        String duplicateval = "";
+        for(int i = 0; i< name.length()-1; i++){
+            if(!expName.contains(String.valueOf(name.charAt(i)))){
+                expName = expName+ name.charAt(i);
+            }
+            else{
+                duplicateval = duplicateval+name.charAt(i);
+
             }
         }
-
-        /*if(counts==1)
-            System.out.println(res[j]);*/
+        //if(duplicateval)
+        char[] array=duplicateval.toCharArray();
+        System.out.println(array.length);
+        System.out.println(expName);
+        System.out.println(duplicateval);
+        //System.out.println(count);
     }
 }

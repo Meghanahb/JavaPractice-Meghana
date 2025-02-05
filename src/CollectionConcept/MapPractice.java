@@ -1,21 +1,18 @@
 package CollectionConcept;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MapPractice
 {
     public static void main(String[] args) {
-        Map m = new HashMap();
+        Map m = new Hashtable();
         m.put(1, "megha");
         m.put(2, "praju");
         m.put(3, "jaya");
         m.put(4, "basavanna");
         System.out.println(m);
 
-        Map<Integer, String> m1 = new HashMap();
+        Map<Integer, String> m1 = new Hashtable<>();
         m1.put(3091, "suchi");
         m1.put(3092, "shiri");
         m1.put(3093, "sushma");
@@ -77,5 +74,7 @@ public class MapPractice
         System.out.println(m);
         m.clear();
         System.out.println(m);
+
+
     }
 }
